@@ -1,0 +1,16 @@
+#N canvas 794 381 450 300 12;
+#X obj 41 175 netreceive -u -b;
+#X obj 41 235 oscparse;
+#X obj 41 259 print;
+#X msg 41 78 listen 12345;
+#X msg 73 122 listen 0;
+#X text 139 77 set port number \, click to start listening;
+#X text 144 121 click to stop listening;
+#X text 43 9 puredata example for osc-websocket;
+#X text 42 28 https://github.com/avantcontra/osc-websocket-example/
+;
+#X text 41 46 tested on pd 0.50.2 \, win7 64bit;
+#X connect 0 0 1 0;
+#X connect 1 0 2 0;
+#X connect 3 0 0 0;
+#X connect 4 0 0 0;
